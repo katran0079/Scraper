@@ -21,6 +21,7 @@
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
+    "mongodb": "^3.3.2",
     "mongoose": "^4.13.7",
     "morgan": "^1.9.1",
     "request": "^2.83.0"
