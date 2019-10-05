@@ -10,9 +10,10 @@ var Article = require("./models/Article.js");
 var request = require("request");
 var cheerio = require("cheerio");
 
-mongoose.connect("mongodb://localhost/testing", {
-  useNewUrlParser: true
-});
+var MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.connect(MONGODB_URI);
 
 var db = mongoose.connection;
 
