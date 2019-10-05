@@ -1,0 +1,36 @@
+body {
+  background-image: url("../img/dino.jpg");
+  background-attachment: auto;
+  padding-top: 70px;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.deleteNote {
+  display: inline-block;
+}
+
+.previousNotes {
+  display: inline-block;
+  width: 90%;
+}
+
+#scrape {
+  margin: 8px 0px;
+}
+
+.text-center {
+  color: black;
+  background-color: burlywood;
+}
+
+.navbar {
+  color: black;
+  background-color: burlywood;
+}
+
+.navbar a {
+  color: black;
+}

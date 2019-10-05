@@ -1,27 +1,28 @@
 {
-  "name": "scraper",
+  "name": "news-scraper",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this assignment, you'll create a web app that lets users view and leave comments on the latest news. But you're not going to actually write any articles; instead, you'll flex your Mongoose and Cheerio muscles to scrape news from another site.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katran0079/Scraper.git"
+    "url": "git+https://github.com/jaymar14/News-Scraper.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/katran0079/Scraper/issues"
+    "url": "https://github.com/jaymar14/News-Scraper/issues"
   },
-  "homepage": "https://github.com/katran0079/Scraper#readme",
+  "homepage": "https://github.com/jaymar14/News-Scraper#readme",
   "dependencies": {
-    "axios": "^0.19.0",
-    "cheerio": "^1.0.0-rc.3",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mongoose": "^5.7.1",
-    "morgan": "^1.9.1"
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.1",
+    "request": "^2.83.0"
   }
 }
