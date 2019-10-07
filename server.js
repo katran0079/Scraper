@@ -10,9 +10,7 @@ var Article = require("./models/Article.js");
 var request = require("request");
 var cheerio = require("cheerio");
 
-var MONGODB_URI =
-  process.env.MONGODB_URI ||
-  "mongodb: heroku_nd22xmcc:7dgf90qbv8gqe61jv80t6gue5f@ds229118.mlab.com:29118/heroku_nd22xmcc";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/testfiles";
 
 mongoose.connect(MONGODB_URI);
 
@@ -91,9 +89,11 @@ app.get("/scrape", function(req, res) {
       result.summary = $(this)
         .children("p")
         .text();
-      result.link = $(this)
-        .children("a")
-        .attr("href");
+      result.link =
+        "https://www.independent.co.uk" +
+        $(this)
+          .children("a")
+          .attr("href");
       var entry = new Article(result);
 
       entry.save(function(err, doc) {
