@@ -9,6 +9,7 @@ var Article = require("./models/Article.js");
 
 var request = require("request");
 var cheerio = require("cheerio");
+var MONGODB_URI = require("./MONGODB_URI");
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/testfiles";
 
